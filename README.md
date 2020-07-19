@@ -13,4 +13,4 @@ La aplicación debe ser desarrollada y probada en al menos:
 Debe permitir a los usuarios interactuar con otros usuarios registrados (*no se permite usuarios anónimos*).
 
 Contará con el **ícono** correspondiente, el **splash screen** y un **menú para las opciones principales**.
---------------------------------------------------------------------
+
