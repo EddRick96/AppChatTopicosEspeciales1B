@@ -1,8 +1,8 @@
 # AppChatTopicosEspeciales1B
 
 ## Integrantes:
-* [Erick Bolaños](erick.bolanos@epn.edu.ec)
-* [Marco Orquera](marco.orquera@epn.edu.ec)
+* [Erick Bolaños](https://github.com/EddRick96): erick.bolanos@epn.edu.ec
+* [Marco Orquera](https://github.com/foxexmen): marco.orquera@epn.edu.ec
 
 ## Descripción
 Aplicación de chat, la cual permita a un usuario interactuar con uno o varios usuarios mediante mensajes de texto y fotos.
