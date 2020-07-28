@@ -7,5 +7,4 @@
     android:background="@drawable/splashscreen"
     tools:context=".SplashScreenChat">
 
-
 </RelativeLayout>
