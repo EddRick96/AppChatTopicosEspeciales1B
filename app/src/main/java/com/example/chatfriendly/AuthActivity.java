@@ -22,7 +22,7 @@ public class AuthActivity extends AppCompatActivity {
 
     private EditText autMail;
     private EditText autPwd;
-    private Button supbtn, loginBtn;
+    private Button supBtn, loginBtn;
     FirebaseAuth fAuth;
 
     @Override
@@ -45,7 +45,8 @@ public class AuthActivity extends AppCompatActivity {
 
         autMail = findViewById(R.id.emailEditText);
         autPwd = findViewById(R.id.passwordEditText);
-        supbtn = findViewById(R.id.signUpButton);
+        supBtn = findViewById(R.id.signUpButton);
+        loginBtn = findViewById(R.id.logInButton);
 
         //Setup
         setup();
@@ -63,7 +64,7 @@ public class AuthActivity extends AppCompatActivity {
         final String mail = autMail.getText().toString().trim();
         final String pwd = autPwd.getText().toString().trim();
 
-        supbtn.setOnClickListener(new View.OnClickListener() {
+        supBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
