@@ -67,7 +67,7 @@ public class AuthActivity extends AppCompatActivity {
         final String mail = autMail.getText().toString().trim();
         final String pwd = autPwd.getText().toString().trim();
 
-        /*signUpBtn.setOnClickListener(new View.OnClickListener() {
+        signUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -75,9 +75,9 @@ public class AuthActivity extends AppCompatActivity {
                 startActivity(chedPage);
 
             }
-        });*/
+        });
 
-        signUpBtn.setOnClickListener(new View.OnClickListener() {
+        /*signUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -100,7 +100,7 @@ public class AuthActivity extends AppCompatActivity {
                     }
                 });
             }
-        });
+        });*/
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
