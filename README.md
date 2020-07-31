@@ -17,5 +17,11 @@ Contará con el **ícono** correspondiente, el **splash screen** y un **menú pa
 La aplicación esta desarrollada en Android Studio con una pixel 2 API 22 en Android 5.1
 
 ### Organización
-Erick Bolaños | * Splash Screen, Login, conexión con Firecase, implementación de envío de imágenes.
-Marco Orquera | * Ícono, Registro, envío de mensajes
+Erick Bolaños:
+-------------------------------------
+* Splash Screen, Login, conexión con Firecase, implementación de envío de imágenes.
+-------------------------------------
+Marco Orquera:  
+------------------------------------
+* Ícono, Registro, envío de mensajes
+--------------------------------------
