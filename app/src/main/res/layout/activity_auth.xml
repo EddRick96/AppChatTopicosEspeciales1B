@@ -17,6 +17,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_weight="1" />
+
         <EditText
             android:id="@+id/emailEditText"
             android:layout_width="match_parent"
@@ -30,7 +35,7 @@
             android:layout_height="8dp" />
 
         <EditText
-            android:id="@+id/passwordEditText"
+            android:id="@+id/pwdEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -51,9 +56,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
-                android:textColor="@android:color/white"
-                android:text="Registrar" />
+                android:background="@android:color/white"
+                android:shadowColor="#BDB9B9"
+                android:shadowDx="@dimen/fui_auth_method_button_margin"
+                android:text="Registrate aquí"
+                android:textColor="@color/colorPrimaryDark" />
 
             <Space
                 android:layout_width="8dp"

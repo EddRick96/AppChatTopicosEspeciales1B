@@ -16,14 +16,18 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 
 public class AuthActivity extends AppCompatActivity {
 
     private EditText autMail;
     private EditText autPwd;
-    private Button supBtn, loginBtn;
-    FirebaseAuth fAuth;
+    private Button signUpBtn, loginBtn;
+    private FirebaseAuth fAuth;
+    private FirebaseAuth.AuthStateListener mauthListener;
+    public static final int SIGN_IN = 1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,11 +48,10 @@ public class AuthActivity extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
 
         autMail = findViewById(R.id.emailEditText);
-        autPwd = findViewById(R.id.passwordEditText);
-        supBtn = findViewById(R.id.signUpButton);
+        autPwd = findViewById(R.id.pwdEditText);
+        signUpBtn = findViewById(R.id.signUpButton);
         loginBtn = findViewById(R.id.logInButton);
 
-        //Setup
         setup();
 ;    }
 
@@ -64,7 +67,17 @@ public class AuthActivity extends AppCompatActivity {
         final String mail = autMail.getText().toString().trim();
         final String pwd = autPwd.getText().toString().trim();
 
-        supBtn.setOnClickListener(new View.OnClickListener() {
+        /*signUpBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent chedPage = new Intent(AuthActivity.this, RegisterActivity.class);
+                startActivity(chedPage);
+
+            }
+        });*/
+
+        signUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -80,7 +93,7 @@ public class AuthActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(AuthActivity.this, "Usuario creado exitósamente", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(), ChatActivity.class));
+                            startActivity(new Intent(getApplicationContext(), AuthActivity.class));
                         }else{
                             Toast.makeText(AuthActivity.this, "No se pudo crear al usuario.", Toast.LENGTH_SHORT).show();
                         }
